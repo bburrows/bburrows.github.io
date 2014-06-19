@@ -17,15 +17,14 @@ body {
   z-index: 1000;
 }
 
-#header-nav {
-  word-spacing: 20px;
-}
 
 #nav-logo {
-  width: 300px;
+  max-width: 300px;
 }
 
-
+li a {
+  color: #FFFCF5;
+}
 
 
 #footer {
