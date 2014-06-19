@@ -37,10 +37,12 @@ a:hover {
   font-weight: 200;
 }
 
-
-#contact-links {
-  margin-top: 5px;
+.contact-nav-icons {
+  margin-top: 8px;
+  margin-left: 2px!important;
+  margin-right: 2px!important;
 }
+
 
 
 
