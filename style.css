@@ -1,29 +1,62 @@
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+
+/* General stuff */
+
+a:hover {
+  text-decoration: none;
+  background: transparent!important;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 130px;
-  font-family: 'Raleway';
-  font-weight: 100;
-  background-image:url('Images/denali.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 1000;
-}
 
+
+/* Navigation styling! */
+
+.navbar {
+  margin-top: 20px;
+}
 
 #nav-logo {
-  max-width: 300px;
+  max-width: 250px;
 }
 
-li a {
-  color: #FFFCF5;
+#main-nav a {
+  color: #FFFFFF;
+}
+
+#main-nav a:hover {
+  color: #FC5D38!important;
+  font-weight: 300;
+}
+
+#main-nav {
+  margin-left: 250px
+}
+
+#main-nav li {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+
+#contact-links {
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+/* Footer styling! */
+
+#footer-nav a:hover {
+  color: #FFFFFF!important;
+  background: transparent!important;
+}
+
+.contact-nav-icons {
+  width: 30px;
 }
 
 
@@ -34,16 +67,17 @@ li a {
   /* Set the fixed height of the footer here */
   height: 130px;
   background-color: #FC5D38;
-  color: #FFFCF5;
+  color: #FCF9F0;
 }
 
-#footer a {
-  color: #FFFCF5;
-}
 
 #footer-nav {
   word-spacing: 15px;
   font-size: 18px;
+}
+
+#footer-nav a {
+  color: #FCF9F0;
 }
 
 #footer-logo {
@@ -64,23 +98,34 @@ li a {
   font-size: 12px;
 }
 
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 130px;
+  font-family: 'Raleway';
+  font-weight: 100;
+  background-image:url('Images/denali.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-body > .container {
-  padding: 130px 15px 0;
-}
-.container .text-muted {
-  margin: 20px 0;
-}
 
 #footer > .container {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 15px;
-}
-
-code {
-  font-size: 80%;
 }
