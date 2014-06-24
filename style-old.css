@@ -191,7 +191,7 @@ html {
 }
 
 body {
-  Margin bottom by footer height */
+  /* Margin bottom by footer height */
   margin-bottom: 130px;
   font-family: 'Raleway';
   font-weight: 100;

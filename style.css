@@ -11,7 +11,19 @@ body {
 
 
 
+
+
+
+
+
+
+
 /* ---Navigation bar styling--- */
+
+
+.solidNav {
+  background-color: #FC5D38;
+}
 
 
 /* Logo */
@@ -44,6 +56,13 @@ body {
   text-decoration: none!important;
   background: transparent!important;
 }
+
+
+#primary-nav li.active{
+  color: #FC5D38!important;
+}
+
+
 
 
 
@@ -125,11 +144,59 @@ body {
 
 
 
+
+
+
+
+
+
+
 /* ---Main content-- */
 
-.section {
+h1 {
+  font-family: 'La Belle Aurore';
+}
+
+
+#fullpage .section {
   padding-top:100px;
 }
+
+
+.next-page {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: rgb(220,220,220);
+  opacity: 0.4;
+}
+
+.next-page a {
+  display: block;
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+
+.next-page img {
+  height: 30px;
+  width: 30px;
+}
+
+.next-page:hover {
+  opacity: 1;
+}
+
+
+.next-page a:hover {
+  text-decoration: none!important;
+}
+
+
+
+
+
+
 
 
 /* Section 1: #home */
@@ -143,30 +210,44 @@ body {
 
 
 
+
+
+
+
+
+
+
+
 /* Section 2: #design */
 
 #section2 {
   background-color: rgb(240,240,240);
 }
 
-.portfolio_link {
-  display: inline-block;
-  width: 128px;
-  height: 128px;
+.portfolio-link {
+  display: block;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   background: #FC5D38;
-  color: #FFFFFF;
-  font-weight: 200;
-  font-size: 20px;
+  opacity: 0.9;
+}
+
+.portfolio-link a {
+  display: block;
+  padding: 15px 0 0 0;
   text-align: center;
 }
 
-.portfolio_link a {
-  color: #FFFFFF;
-  font-weight: 200;
-  font-size: 20px;
-  text-align: center;
+.portfolio-link img {
+  height: 30px;
+  width: 30px;
 }
+
+.portfolio_link:hover {
+  opacity: 1;
+}
+
 
 .portfolio_link a:hover {
   text-decoration: none!important;
@@ -180,3 +261,57 @@ body {
 
 
 /* Section 4: #about */
+
+
+
+/* Footer */
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 210px;
+  background-color: #FC5D38;
+}
+
+#footer-nav {
+  color: #FCF9F0;
+  margin-top: 12px;
+  font-size: 18px;
+  word-spacing: 10px;
+}
+
+#footer-nav a {
+  color: #FCF9F0;
+}
+
+#footer-nav a:hover {
+  color: #FFFFFF!important;
+  background: transparent!important;
+  text-decoration: none;
+}
+
+#footer-contact {
+  margin-top: 6px;
+}
+
+#footer-logo {
+  width: 150px;
+  margin-right: 30px;
+}
+
+.contact-footer-icons {
+  width: 30px;
+  margin: 2px;
+}
+
+#footer-bottom-row {
+  color: #FCF9F0;
+  font-size: 10px;
+  margin-top: 8px;
+}
+
+#copyright {
+  word-spacing: 10px;
+}
