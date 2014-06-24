@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(100,100,100);
+}
+
+.share {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -3px;
+}
+
+.icon {
+  	display: inline-block;
+  	height: 38px;
+  	width: 38px;
+  	border-radius: 19px;
+  	background-color: rgba(255, 255, 255, 0.35);
+  	background-size: 38px 38px;
+  	margin-right: 14px;
+    background-position: center;
+  	overflow: hidden;
+  	box-shadow: 1px 0 3px rgba(0, 0, 0, 0.05);
+  	-webkit-transition: all 200ms ease-in-out;
+  	-moz-transition: all 200ms ease-in-out;
+  	-o-transition: all 200ms ease-in-out;
+  	transition: all 200ms ease-in-out;
+}
+
+
+.icon:hover {
+  background-color: white;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+.icon:hover a {
+  opacity: 1;
+}
+
+
+.icon a {
+  display: block;
+  height: 38px;
+  width: 38px;
+  opacity: 0;
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+
+.icon img {
+  height: 38px;
+  width: 38px;
+}
+
+.email {
+  background-image: url(../Images/email.png);
+}
+
+.twitter {
+  background-image: url(../Images/twitter.png);
+}
+
+.linkedin {
+  background-image: url(../Images/linkedin.png);
+
+}
+
+.instagram {
+  background-image: url(../Images/instagram.png);
+}

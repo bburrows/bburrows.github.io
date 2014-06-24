@@ -47,7 +47,7 @@ body {
 
 
 
-/* Contact icons */
+/* Contact icons (right) */
 
 #contact {
   margin-top: 25px;
@@ -142,41 +142,20 @@ body {
 }
 
 
-
 /* Section 2: #design */
 
 #section2 {
-  background-color: rgb(240,240,240);
-}
-
-.portfolio_link {
-  display: inline-block;
-  width: 128px;
-  height: 128px;
-  border-radius: 100%;
-  background: #FC5D38;
-  color: #FFFFFF;
-  font-weight: 200;
-  font-size: 20px;
-  text-align: center;
-}
-
-.portfolio_link a {
-  color: #FFFFFF;
-  font-weight: 200;
-  font-size: 20px;
-  text-align: center;
-}
-
-.portfolio_link a:hover {
-  text-decoration: none!important;
+  
 }
 
 
 
-/* Section 3: #chocolate */
+/* Section 2: #chocolate */
+
+
 
 
 
 
 /* Section 4: #about */
+
