@@ -22,7 +22,7 @@ body {
 
 
 .solidNav {
-  background-color: #FC5D38;
+  background-color: rgba(250,250,250,.99);
 }
 
 
@@ -166,10 +166,12 @@ small {
 }
 
 
+/* For some reason this was necessary before; no longer.
 #fullpage .section {
   padding-top:100px;
   position: relative;
 }
+*/
 
 
 .next-page {
@@ -224,7 +226,6 @@ small {
 #main-text-s01 {
   width: 400px;
   margin: 0 auto;
-  margin-top: -300px;
 }
 
 #next-arrow-01 {
@@ -242,11 +243,6 @@ small {
   background-color: rgb(240,240,240);
 }
 
-#main-text-s02 {
-  width: 400px;
-  margin: 0 auto;
-  margin-top: -100px;
-}
 
 .portfolio-link {
   display: block;
@@ -290,6 +286,10 @@ small {
 
 
 
+
+
+
+
 /* Section 3: #chocolate */
 
 #section3 {
@@ -297,17 +297,13 @@ small {
 }
 
 
-#main-text-s03 {
-  width: 400px;
-  margin: 0 auto;
-  margin-top: -100px;
-}
-
-
-
 #next-arrow-03 {
   margin-top: 280px;
 }
+
+
+
+
 
 
 
@@ -318,13 +314,9 @@ small {
   background-color: rgb(240,240,240);
 }
 
-
-#main-text-s04 {
-  width: 400px;
-  margin: 0 auto;
-  margin-top: -100px;
+#brittany-photo img {
+  width: 300px; 
 }
-
 
 
 
@@ -337,13 +329,14 @@ small {
 
 /* General footer things */
 
+
 #footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 210px;
   background-color: #FC5D38;
+  /* Set the fixed height of the footer here */
+   height: 110px; 
 }
 
 
@@ -391,6 +384,9 @@ small {
   color: #FCF9F0;
   font-size: 10px;
   margin-top: 8px;
+
+  /* If auto-scrolling = false */
+  margin-bottom: 8px;
 }
 
 #copyright {

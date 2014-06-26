@@ -14,6 +14,8 @@
         <!-- Full Page files: http://alvarotrigo.com/fullPage/   https://github.com/alvarotrigo/fullPage.js#fullpagejs -->
         <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="vendors/jquery.easings.min.js"></script>
         <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
         <script type="text/javascript" src="jquery.fullPage.js"></script>
@@ -35,8 +37,7 @@
 
 
     <body>
-
-
+   
 
 
     <!-- Navigation bar -->
@@ -44,15 +45,21 @@
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand brand" href="#home">
-                    <img id="nav-logo" src="Images/64th-logo3.png">
+                    <img id="nav-logo" alt="64th Parallel logo" src="Images/64th-logo3.png">
                 </a>
             </div>
 
 
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id='target-nav'>
 
-                <ul class="nav navbar-nav" id="primary-nav">
+                <ul class="nav navbar-nav navbar-nav" id="primary-nav">
 
                     <li data-menuanchor="design" class="primary-nav-item">
                         <a href="#design">design</a>
@@ -69,34 +76,34 @@
                 </ul>
 
 
-                <div class="collapse navbar-collapse navbar-right">
-                <ul id="contact">
+                
+                <ul class="navbar-right" id="contact">
                     <li class="icon email">
                         <a href="mailto:brittany.burrows@gmail.com?Subject=Hello" target="_blank">
-                            <img src="../Images/email-color.png">
+                            <img src="../Images/email-color.png" alt="email">
                         </a>
                     </li>
 
                     <li class="icon twitter">
                         <a href="http://www.twitter.com/drbrittany" target="_blank">
-                            <img src="../Images/twitter-color.png">
+                            <img src="../Images/twitter-color.png" alt="Twitter">
                         </a>
                     </li>
 
                     <li class="icon linkedin">
                         <a href="http://www.linkedin.com/in/bburrows" target="_blank">
-                            <img src="../Images/linkedin-color.png">
+                            <img src="../Images/linkedin-color.png" alt="LinkedIn">
                         </a>
                     </li>
 
                     <li class="icon instagram">
                         <a href="http://www.instagram.com/bdigs" target="_blank">
-                            <img src="../Images/instagram-color.png">
+                            <img src="../Images/instagram-color.png" alt="Instagram">
                         </a>
                     </li>
 
                 </ul>
-                <div>
+              
                 
             </nav>
         </div>
@@ -122,7 +129,7 @@
 
                 <div class="row next-page" id="next-arrow-01">
                     <a href="#design">
-                        <img src="Images/down-arrow.png">
+                        <img src="Images/down-arrow.png" alt="down arrow">
                     </a>
                 </div>
             
@@ -136,23 +143,23 @@
 
         <div class="section" id="section2">
           
-                <div class="row" id="main-text-s02">
+            <div class="row" id="main-text-s02">
 
-                    <h1>Design <small>Foo bar. alsd asl kd la ks</small></h1>
+                <h1>Design <small>Foo bar. alsd asl kd la ks</small></h1>
                        
-                </div>
+            </div>
 
-                <div class="row portfolio-link">
-                    <a href="/portfolio">
-                        <img src="Images/right-arrow.png">
-                    </a>
-                </div>
+            <div class="row portfolio-link">
+                <a href="/portfolio">
+                    <img src="Images/right-arrow.png" alt="right arrow">
+                </a>
+            </div>
 
-                <div class="row next-page" id="next-arrow-02">
-                    <a href="#chocolate">
-                        <img src="Images/down-arrow.png">
-                    </a>
-                </div>
+            <div class="row next-page" id="next-arrow-02">
+                <a href="#chocolate">
+                    <img src="Images/down-arrow.png" alt="down arrow">
+                </a>
+            </div>
 
           
         </div>
@@ -165,18 +172,18 @@
 
         <div class="section" id="section3">
           
-                <div class="row" id="main-text-s03">
+            <div class="row" id="main-text-s03">
 
-                    <h1>Chocolate <small>Foo bar.</small></h1>
+                <h1>Chocolate <small>Foo bar.</small></h1>
                        
-                </div>
+            </div>
 
 
-                <div class="row next-page" id="next-arrow-03">
-                    <a href="#about">
-                        <img src="Images/down-arrow.png">
-                    </a>
-                </div>
+            <div class="row next-page" id="next-arrow-03">
+                <a href="#about">
+                    <img src="Images/down-arrow.png" alt="down arrow">
+                </a>
+            </div>
 
           
         </div>
@@ -189,11 +196,18 @@
                 
         <div class="section" id="section4">
            
-                <div class="row" id="main-text-s04">
+            <div class="row">
 
-                    <h1>About <small>Foo bar.</small></h1>
-                       
+                <div class="col-md-3 col-md-offset-1" id="brittany-photo">
+                    <img src="Images/beb.JPG" alt="Brittany" class="img-circle">
                 </div>
+
+                <div class="col-md-8" id="main-text-s04">
+                    <h1>About <small>Foo bar al fsdlk ewlk sdl asdlkla we.</small></h1>
+                </div>
+
+            </div>
+       
 
          
 
@@ -201,54 +215,53 @@
 
         <!-- Footer -->
 
+            
             <div id="footer">
-                <div class="container-fluid">
+             
+                <div class="container">
+                
+                    <div class="text-center" id="footer-nav">
 
-                    <div class="row text-center" id="footer-nav">
-
-                    <a href="/">home</a>  &#183  <a href="#design">design</a>  &#183  <a href="#chocolate">chocolate</a>  &#183  <a href="#about">about</a>  &#183  <a href="/portfolio">portfolio</a>
+                        <a href="/">home</a>  &#183  <a href="#design">design</a>  &#183  <a href="#chocolate">chocolate</a>  &#183  <a href="#about">about</a>  &#183  <a href="/portfolio">portfolio</a>
                    
-                </div>
+                    </div>
 
 
-                <div class="row text-center" id="footer-contact">
-                    <a href="/">
-                        <img src="Images/64th-logo2.png" id="footer-logo">
-                    </a>
-                    <a href="mailto:brittany.burrows@gmail.com?Subject=Hello">
-                        <img src="Images/email-footer.png" class="contact-footer-icons">
-                    </a>
-                    <a href="http://www.twitter.com/drbrittany">
-                        <img src="Images/twitter-footer.png" class="contact-footer-icons">
-                    </a>
-                    <a href="http://www.linkedin.com/in/bburrows">
-                        <img src="Images/linkedin-footer.png" class="contact-footer-icons">
-                    </a>
-                    <a href="http://www.instagram.com/bdigs">
-                        <img src="Images/instagram-footer.png" class="contact-footer-icons">
-                    </a>
-                </div>
+                    <div class="text-center" id="footer-contact">
+                        <a href="/">
+                            <img src="Images/64th-logo2.png" id="footer-logo" alt="64th Parallel logo">
+                        </a>
+
+                        <a href="mailto:brittany.burrows@gmail.com?Subject=Hello">
+                            <img src="Images/email-footer.png" class="contact-footer-icons" alt="email">
+                        </a>
+
+                        <a href="http://www.twitter.com/drbrittany">
+                            <img src="Images/twitter-footer.png" class="contact-footer-icons" alt="Twitter">
+                        </a>
+
+                        <a href="http://www.linkedin.com/in/bburrows">
+                            <img src="Images/linkedin-footer.png" class="contact-footer-icons" alt="LinkedIn">
+                        </a>
+
+                        <a href="http://www.instagram.com/bdigs">
+                            <img src="Images/instagram-footer.png" class="contact-footer-icons" alt="Instagram">
+                        </a>
+                    </div>
 
 
-                <div class="row text-center" id="footer-bottom-row">
+                <div class="text-center" id="footer-bottom-row">
                     <span id="footer-bottom-row-spacing"> Copyright &copy; Brittany <span id="copyright">Burrows  &#183 </span> Made in Oakland </span>
                 </div>
 
-
-
-                </div>
             </div>
 
-
         </div>
-
-
     </div>
+      
 
 
-
-
-
+    
     </body>
 
-    </html>
+</html>

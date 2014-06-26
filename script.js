@@ -2,13 +2,9 @@ $(document).ready(function() {
 
 	$('#fullpage').fullpage({
 		anchors: ['home', 'design', 'chocolate', 'about'],
+        autoScrolling: true,
+        scrollingSpeed: 500,
 	});
-
-
-
-    // Default is 700ms; changed to 500ms (fullPage.js)
-    $.fn.fullpage.setScrollingSpeed(500);
-
 
 
 
