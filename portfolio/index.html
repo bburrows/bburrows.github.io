@@ -1,179 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
     <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<!-- Google fonts -->
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=La+Belle+Aurore">
+    	
+    	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+    	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/main.js"></script> <!-- Gem jQuery -->
+
         <!-- Bootstrap -->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <!-- Content filter -->
-        <script src="js/modernizr.js"></script> <!-- Modernizr -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/main.js"></script> <!-- Gem jQuery -->
-
-        <!-- Google fonts -->
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=La+Belle+Aurore">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
         <!-- Mine -->
-        <script type="text/javascript" src="script.js"></script>
         <link href="style.css" rel="stylesheet">
-
-        <!-- Favicon -->
+      	
+    	<!-- Favicon -->
         <link rel="shortcut icon" href="../Images/64th-favicon.png">
 
-        <title>64th Parallel</title>
+        <title>64th Parallel Portfolio</title>
+
     </head>
 
 
-
-
-
-
     <body>
+            <!-- Navigation bar -->
+
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand brand" href="/">
+                        <img id="nav-logo" src="../Images/64th-logo1.png">
+                    </a>
+                </div>
 
 
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
 
-    <!-- Navigation bar -->
+                  
+                    <ul class="collapse navbar-collapse navbar-right" id="contact">
+                        <li class="icon email">
+                            <a href="mailto:brittany.burrows@gmail.com?Subject=Hello" target="_blank">
+                                <img src="../Images/email.png">
+                            </a>
+                        </li>
 
-    <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand brand" href="/">
-                    <img id="nav-logo" src="../Images/64th-logo1.png">
-                </a>
+                        <li class="icon twitter">
+                            <a href="http://www.twitter.com/drbrittany" target="_blank">
+                                <img src="../Images/twitter.png">
+                            </a>
+                        </li>
+
+                        <li class="icon linkedin">
+                            <a href="http://www.linkedin.com/in/bburrows" target="_blank">
+                                <img src="../Images/linkedin.png">
+                            </a>
+                        </li>
+
+                        <li class="icon instagram">
+                            <a href="http://www.instagram.com/bdigs" target="_blank">
+                                <img src="../Images/instagram.png">
+                            </a>
+                        </li>
+
+                    </ul>
+                    
+                    
+                </nav>
             </div>
-
-
-            <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-
-
-              
-                <ul class="collapse navbar-collapse navbar-right" id="contact">
-                    <li class="icon email">
-                        <a href="mailto:brittany.burrows@gmail.com?Subject=Hello" target="_blank">
-                            <img src="../Images/email.png">
-                        </a>
-                    </li>
-
-                    <li class="icon twitter">
-                        <a href="http://www.twitter.com/drbrittany" target="_blank">
-                            <img src="../Images/twitter.png">
-                        </a>
-                    </li>
-
-                    <li class="icon linkedin">
-                        <a href="http://www.linkedin.com/in/bburrows" target="_blank">
-                            <img src="../Images/linkedin.png">
-                        </a>
-                    </li>
-
-                    <li class="icon instagram">
-                        <a href="http://www.instagram.com/bdigs" target="_blank">
-                            <img src="../Images/instagram.png">
-                        </a>
-                    </li>
-
-                </ul>
-                
-                
-            </nav>
         </div>
-    </div>
-
-
-
-    <!-- Main content -->
-
-
-    <div class="cd-gallery-container">
-        <nav class="cd-filter">
-            <ul>
-                <li class="placeholder"> 
-                    <a data-type="red" href="#0">Graphic Design</a> <!-- selected option on mobile -->
-                </li> 
-
-                <li>
-                    <a class="selected" data-type="red" href="#0">Graphic Design</a>
-                </li>
-
-                <li>
-                    <a data-type="blue" href="#0">UX</a>
-                </li>
-
-                <li>
-                    <a data-type="green" href="#0">UI</a>
-                </li>
-            </ul>
-        </nav>
-
-        <ul class="cd-gallery cd-container">
-            <li>
-                <ul class="cd-item-wrapper">
-                    <li data-type="red" class="is-visible">
-                        <a href="/portfolio/VC/"><img src="../Images/portfolio/PS_MindofaVC-infographic.png" alt="thumbnail"></a>
-                    </li>
-
-                    <li data-type="blue" class="is-hidden">
-                        <img src="img/thumb-blue.jpg" alt="thumbnail">
-                    </li>
-
-                    <li data-type="green" class="is-hidden">
-                        <img src="img/thumb-green.jpg" alt="thumbnail">
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <ul class="cd-item-wrapper">
-                    <li data-type="red" class="is-visible">
-                        <img src="img/thumb-red.jpg" alt="thumbnail">
-                    </li>
-
-                    <li data-type="blue" class="is-hidden">
-                        <img src="img/thumb-blue.jpg" alt="thumbnail">
-                    </li>
-                    
-                    <li data-type="green" class="is-hidden">
-                        <img src="img/thumb-green.jpg" alt="thumbnail">
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <ul class="cd-item-wrapper">
-                    <li data-type="red" class="is-visible">
-                        <img src="img/thumb-red.jpg" alt="thumbnail">
-                    </li>
-
-                    <li data-type="blue" class="is-hidden">
-                        <img src="img/thumb-blue.jpg" alt="thumbnail">
-                    </li>
-                    
-                    <li data-type="green" class="is-hidden">
-                        <img src="img/thumb-green.jpg" alt="thumbnail">
-                    </li>
-                </ul>
-            </li>
-
-            <li>
-                <ul class="cd-item-wrapper">
-                    <li data-type="red" class="is-visible">
-                        <img src="img/thumb-red.jpg" alt="thumbnail">
-                    </li>
-
-                    <li data-type="blue" class="is-hidden">
-                        <img src="img/thumb-blue.jpg" alt="thumbnail">
-                    </li>
-                    
-                    <li data-type="green" class="is-hidden">
-                        <img src="img/thumb-green.jpg" alt="thumbnail">
-                    </li>
-                </ul>
-            </li>
-        </ul> <!-- cd-gallery -->
-    </div> <!-- cd-gallery-container -->
 
 
 
@@ -181,29 +88,105 @@
 
 
 
+    	<div class="cd-gallery-container">
+    		<nav class="cd-filter">
+    			<ul>
+    				<li class="placeholder"> 
+    					<a data-type="red" href="#0">Red</a> <!-- selected option on mobile -->
+    				</li> 
 
+    				<li>
+    					<a class="selected" data-type="red" href="#0">Red</a>
+    				</li>
 
+    				<li>
+    					<a data-type="blue" href="#0">Blue</a>
+    				</li>
 
+    				<li>
+    					<a data-type="green" href="#0">Green</a>
+    				</li>
+    			</ul>
+    		</nav>
 
+    		<ul class="cd-gallery cd-container">
+    			<li>
+    				<ul class="cd-item-wrapper">
+    					<li data-type="red" class="is-visible">
+    						<img src="../Images/portfolio/PS_MindofaVC-infographic.png" alt="thumbnail">
+    					</li>
 
+    					<li data-type="blue" class="is-hidden">
+    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+    					</li>
 
+    					<li data-type="green" class="is-hidden">
+    						<img src="img/thumb-green.jpg" alt="thumbnail">
+    					</li>
+    				</ul>
+    			</li>
 
+    			<li>
+    				<ul class="cd-item-wrapper">
+    					<li data-type="red" class="is-visible">
+    						<img src="img/thumb-red.jpg" alt="thumbnail">
+    					</li>
 
+    					<li data-type="blue" class="is-hidden">
+    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+    					</li>
+    					
+    					<li data-type="green" class="is-hidden">
+    						<img src="img/thumb-green.jpg" alt="thumbnail">
+    					</li>
+    				</ul>
+    			</li>
 
+    			<li>
+    				<ul class="cd-item-wrapper">
+    					<li data-type="red" class="is-visible">
+    						<img src="img/thumb-red.jpg" alt="thumbnail">
+    					</li>
 
+    					<li data-type="blue" class="is-hidden">
+    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+    					</li>
+    					
+    					<li data-type="green" class="is-hidden">
+    						<img src="img/thumb-green.jpg" alt="thumbnail">
+    					</li>
+    				</ul>
+    			</li>
 
+    			<li>
+    				<ul class="cd-item-wrapper">
+    					<li data-type="red" class="is-visible">
+    						<img src="img/thumb-red.jpg" alt="thumbnail">
+    					</li>
+
+    					<li data-type="blue" class="is-hidden">
+    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+    					</li>
+    					
+    					<li data-type="green" class="is-hidden">
+    						<img src="img/thumb-green.jpg" alt="thumbnail">
+    					</li>
+    				</ul>
+    			</li>
+    		</ul> <!-- cd-gallery -->
+    	</div> <!-- cd-gallery-container -->
 
 
 
         <!-- Footer -->
 
-            <div id="footer">
-                <div class="container-fluid">
+        <div id="footer">
+            <div class="container-fluid">
 
-                    <div class="row text-center" id="footer-nav">
+                <div class="row text-center" id="footer-nav">
 
                     <a href="/">home</a>  &#183  <a href="/#design">design</a>  &#183  <a href="/#chocolate">chocolate</a>  &#183  <a href="/#about">about</a>  &#183  <a href="/portfolio">portfolio</a>
-                   
+               
                 </div>
 
 
@@ -232,19 +215,15 @@
 
 
 
-                </div>
             </div>
-
-
         </div>
 
 
-    </div>
+
 
 
 
 
 
     </body>
-
-    </html>
+</html>
