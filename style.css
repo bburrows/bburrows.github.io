@@ -145,41 +145,42 @@ html * {
 }
 
 
-
 body, html {
   /* important */
   height: 100%;
 }
 
 a {
-  color: #b4d7a8;
+  color: #FC5D38;
   text-decoration: none;
 }
+
 
 /* -------------------------------- 
 
 Modules - reusable parts of our design
 
 -------------------------------- */
-.cd-container {
+.container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
   max-width: 768px;
   margin: 0 auto;
 }
-.cd-container::after {
+.container::after {
   /* clearfix */
   content: '';
   display: table;
   clear: both;
 }
 
+
 /* -------------------------------- 
 
 xnugget info 
 
 -------------------------------- */
-.cd-nugget-info {
+.nugget-info {
   display: inline-block;
   padding: 1em 1.4em 1em;
   margin-top: 20px;
@@ -191,20 +192,20 @@ xnugget info
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.cd-nugget-info .cd-nugget-info-arrow {
+.nugget-info .nugget-info-arrow {
   fill: #3d3536;
 }
 
-.cd-nugget-info span {
+.nugget-info span {
   vertical-align: middle;
   display: inline-block;
 }
 
-.cd-nugget-info span svg {
+.nugget-info span svg {
   display: block;
 }
 
-.no-touch .cd-nugget-info:hover {
+.no-touch .nugget-info:hover {
   background: #99a478;
 }
 
@@ -213,7 +214,7 @@ xnugget info
 Main components 
 
 -------------------------------- */
-.cd-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -223,37 +224,37 @@ Main components
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
-.cd-header:after {
+.header:after {
   content: "";
   display: table;
   clear: both;
 }
-.cd-header #cd-logo {
+.header #logo {
   float: left;
   margin: 13px 0 0 5%;
 }
-.cd-header #cd-logo img {
+.header #logo img {
   display: block;
 }
 @media only screen and (min-width: 768px) {
-  .cd-header {
+  .header {
     height: 70px;
   }
-  .cd-header #cd-logo {
+  .header #logo {
     margin: 23px 0 0 5%;
   }
 }
 
-.cd-main-nav {
+.main-nav {
   float: right;
   margin-right: 5%;
   width: 44px;
   height: 100%;
-  background: url("../img/cd-icon-menu.svg") no-repeat center center;
+  background: url("../img/icon-menu.svg") no-repeat center center;
   background-size: 44px 44px;
   cursor: pointer;
 }
-.cd-main-nav ul {
+.main-nav ul {
   position: absolute;
   top: 0;
   left: 0;
@@ -264,14 +265,14 @@ Main components
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-.cd-main-nav ul.is-visible {
+.main-nav ul.is-visible {
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
   -ms-transform: translateY(50px);
   -o-transform: translateY(50px);
   transform: translateY(50px);
 }
-.cd-main-nav a {
+.main-nav a {
   display: block;
   height: 50px;
   line-height: 50px;
@@ -281,13 +282,13 @@ Main components
   color: #8e7d7f;
 }
 @media only screen and (min-width: 768px) {
-  .cd-main-nav {
+  .main-nav {
     width: auto;
     height: auto;
     background: none;
     cursor: auto;
   }
-  .cd-main-nav ul {
+  .main-nav ul {
     position: static;
     width: auto;
     -webkit-transform: translateY(0);
@@ -297,18 +298,18 @@ Main components
     transform: translateY(0);
     line-height: 70px;
   }
-  .cd-main-nav ul.is-visible {
+  .main-nav ul.is-visible {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
   }
-  .cd-main-nav li {
+  .main-nav li {
     display: inline-block;
     margin-left: 1em;
   }
-  .cd-main-nav a {
+  .main-nav a {
     display: inline-block;
     height: auto;
     line-height: normal;
@@ -321,19 +322,19 @@ Main components
     font-size: 14px;
     font-size: 0.875rem;
   }
-  .no-touch .cd-main-nav a:hover {
+  .no-touch .main-nav a:hover {
     color: #99a478;
   }
 }
 
-.cd-main-content {
+.main-content {
   /* you need to assign a min-height to the main content so that the children can inherit it*/
   height: 100%;
   position: relative;
   z-index: 1;
 }
 
-.cd-intro {
+.intro {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -349,7 +350,7 @@ Main components
   max-width: 1170px;
 }
 
-.cd-fixed-bg {
+.fixed-bg {
   position: relative;
   min-height: 100%;
   background-size: cover;
@@ -357,14 +358,14 @@ Main components
   background-position: center center;
   z-index: 1;
 }
-.cd-fixed-bg h1, .cd-fixed-bg h2 {
+.fixed-bg h1, .fixed-bg h2 {
   text-align: center;
   font-size: 30px;
   font-size: 1.875rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   color: white;
 }
-.cd-fixed-bg h2 {
+.fixed-bg h2 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -378,34 +379,34 @@ Main components
   width: 90%;
   max-width: 1170px;
 }
-.cd-fixed-bg.cd-bg-1 {
+.fixed-bg.bg-1 {
   background-image: url("Images/denali.jpg");
 }
-.cd-fixed-bg.cd-bg-2 {
+.fixed-bg.bg-2 {
   background-image: url("Images/ghostranch.jpg");
 }
-.cd-fixed-bg.cd-bg-3 {
+.fixed-bg.bg-3 {
   background-image: url("Images/truffles-vib.jpg");
 }
-.cd-fixed-bg.cd-bg-4 {
+.fixed-bg.bg-4 {
   background-image: url("Images/cow-close.jpg");
 }
 @media only screen and (min-width: 768px) {
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+  .fixed-bg h1, .fixed-bg h2 {
     font-size: 36px;
   }
 }
 @media only screen and (min-width: 1170px) {
-  .cd-fixed-bg {
+  .fixed-bg {
     background-attachment: fixed;
   }
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+  .fixed-bg h1, .fixed-bg h2 {
     font-size: 48px;
     font-weight: 300;
   }
 }
 
-.cd-scrolling-bg {
+.scrolling-bg {
   position: relative;
   min-height: 100%;
   padding: 4em 0;
@@ -413,111 +414,24 @@ Main components
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
-.cd-scrolling-bg.cd-color-1 {
-  background-color: #3d3536;
+.scrolling-bg.color-1 {
+  background-color: #FFD008;
   color: #a6989a;
 }
-.cd-scrolling-bg.cd-color-2 {
-  background-color: #99a478;
+.scrolling-bg.color-2 {
+  background-color: #569CBE;
   color: #3d3536;
 }
-.cd-scrolling-bg.cd-color-3 {
-  background-color: #b4d7a8;
+.scrolling-bg.color-3 {
+  background-color: #A84D90;
   color: #3d3536;
 }
 @media only screen and (min-width: 768px) {
-  .cd-scrolling-bg {
+  .scrolling-bg {
     padding: 8em 0;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 2;
     font-weight: 300;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---Footer--- */
-
-/* General footer things */
-
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /*background-color: #FC5D38;*/
-  background-color: #FFFFFF;
-  /* Set the fixed height of the footer here */
-   height: 110px; 
-}
-
-
-/* Top row: nav */
-
-#footer-nav {
-  color: rgb(110,110,110);
-  margin-top: 12px;
-  font-size: 18px;
-  word-spacing: 10px;
-}
-
-#footer-nav a {
-  color: rgb(110,110,110);
-}
-
-#footer-nav a:hover {
-  color: rgb(60,60,60)!important;
-  background: transparent!important;
-  text-decoration: none!important;
-}
-
-
-/* Middle row: logo / contact */
-
-
-#footer-contact {
-  margin-top: 6px;
-}
-
-#footer-logo {
-  width: 150px;
-  margin-right: 30px;
-}
-
-.contact-footer-icons {
-  width: 30px;
-  margin: 2px;
-}
-
-#footer-contact a:hover {
-  text-decoration: none!important;
-}
-
-
-/* Bottom row: copyright */
-
-#footer-bottom-row {
-  color: rgb(110,110,110);
-  font-size: 10px;
-  margin-top: 8px;
-
-  /* If auto-scrolling = false */
-  margin-bottom: 8px;
-}
-
-#copyright {
-  word-spacing: 10px;
 }
