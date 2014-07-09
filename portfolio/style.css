@@ -94,20 +94,20 @@ body {
 }
 
 .email {
-  background-image: url(../Images/email-grey.png);
+  background-image: url(../images/email-grey.png);
 }
 
 .twitter {
-  background-image: url(../Images/twitter-grey.png);
+  background-image: url(../images/twitter-grey.png);
 }
 
 .linkedin {
-  background-image: url(../Images/linkedin-grey.png);
+  background-image: url(../images/linkedin-grey.png);
 
 }
 
 .instagram {
-  background-image: url(../Images/instagram-grey.png);
+  background-image: url(../images/instagram-grey.png);
 }
 
 
@@ -149,21 +149,22 @@ img {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 110px;
-  background-color: #FC5D38;
+  background-color: rgb(170,170,170);
 }
 
 
 /* Top row: nav */
 
 #footer-nav {
-  color: #FCF9F0;
+  color: #FFFFFF;
+  font-weight: 200;
   margin-top: 12px;
   font-size: 18px;
   word-spacing: 10px;
 }
 
 #footer-nav a {
-  color: #FCF9F0;
+  color: #FFFFFF;
 }
 
 #footer-nav a:hover {
@@ -194,8 +195,9 @@ img {
 /* Bottom row: copyright */
 
 #footer-bottom-row {
-  color: #FCF9F0;
-  font-size: 10px;
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 11px;
   margin-top: 8px;
 }
 

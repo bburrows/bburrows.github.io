@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=La+Belle+Aurore">
     	
+        <!-- Bouncy filter -->
     	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     	<link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
     	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -23,11 +24,17 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
+        <!-- Lightbox -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <link href="css/lightbox.css" rel="stylesheet">
+
+
         <!-- Mine -->
         <link href="style.css" rel="stylesheet">
       	
     	<!-- Favicon -->
-        <link rel="shortcut icon" href="../Images/64th-favicon.png">
+        <link rel="shortcut icon" href="../images/64th-favicon.png">
 
         <title>64th Parallel Portfolio</title>
 
@@ -41,7 +48,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand brand" href="/">
-                        <img id="nav-logo" src="../Images/64th-logo1.png">
+                        <img id="nav-logo" src="../images/64th-logo1.png">
                     </a>
                 </div>
 
@@ -53,25 +60,25 @@
                     <ul class="collapse navbar-collapse navbar-right" id="contact">
                         <li class="icon email">
                             <a href="mailto:brittany.burrows@gmail.com?Subject=Hello" target="_blank">
-                                <img src="../Images/email.png">
+                                <img src="../images/email.png">
                             </a>
                         </li>
 
                         <li class="icon twitter">
                             <a href="http://www.twitter.com/drbrittany" target="_blank">
-                                <img src="../Images/twitter.png">
+                                <img src="../images/twitter.png">
                             </a>
                         </li>
 
                         <li class="icon linkedin">
                             <a href="http://www.linkedin.com/in/bburrows" target="_blank">
-                                <img src="../Images/linkedin.png">
+                                <img src="../images/linkedin.png">
                             </a>
                         </li>
 
                         <li class="icon instagram">
                             <a href="http://www.instagram.com/bdigs" target="_blank">
-                                <img src="../Images/instagram.png">
+                                <img src="../images/instagram.png">
                             </a>
                         </li>
 
@@ -89,92 +96,128 @@
 
 
     	<div class="cd-gallery-container">
+          
     		<nav class="cd-filter">
     			<ul>
     				<li class="placeholder"> 
-    					<a data-type="red" href="#0">Red</a> <!-- selected option on mobile -->
+    					<a data-type="red" href="#0">Web</a> <!-- selected option on mobile -->
     				</li> 
 
     				<li>
-    					<a class="selected" data-type="red" href="#0">Red</a>
+    					<a class="selected" data-type="red" href="#0">Web</a>
     				</li>
 
     				<li>
-    					<a data-type="blue" href="#0">Blue</a>
+    					<a data-type="blue" href="#0">Mobile</a>
     				</li>
 
     				<li>
-    					<a data-type="green" href="#0">Green</a>
+    					<a data-type="green" href="#0">Other</a>
     				</li>
     			</ul>
     		</nav>
+    
+
+
 
     		<ul class="cd-gallery cd-container">
     			<li>
     				<ul class="cd-item-wrapper">
     					<li data-type="red" class="is-visible">
-    						<img src="../Images/portfolio/PS_MindofaVC-infographic.png" alt="thumbnail">
+                            <a href="../images/portfolio/web/career-matches.png" data-lightbox="web" data-title="My caption">
+    						  <img src="../images/portfolio/web/career-matches-sm.png" alt="thumbnail">
+                            </a>
     					</li>
 
     					<li data-type="blue" class="is-hidden">
-    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/mobile/wheel-nav.png" data-lightbox="mobile" data-title="My caption">
+    						  <img src="../images/portfolio/mobile/wheel-nav-sm.png" alt="thumbnail">
+                            </a>
     					</li>
 
     					<li data-type="green" class="is-hidden">
-    						<img src="img/thumb-green.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/other/vc.png" data-lightbox="other" data-title="My caption">
+    						  <img src="../images/portfolio/other/vc-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     				</ul>
     			</li>
 
+
+
     			<li>
     				<ul class="cd-item-wrapper">
     					<li data-type="red" class="is-visible">
-    						<img src="img/thumb-red.jpg" alt="thumbnail">
-    					</li>
+                            <a href="../images/portfolio/web/results.png" data-lightbox="web" data-title="My caption">
+                              <img src="../images/portfolio/web/results-sm.png" alt="thumbnail">
+                            </a>
+                        </li>
 
     					<li data-type="blue" class="is-hidden">
-    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/mobile/double-drawer-nav.png" data-lightbox="mobile" data-title="My caption">
+    						  <img src="../images/portfolio/mobile/double-drawer-nav-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     					
     					<li data-type="green" class="is-hidden">
-    						<img src="img/thumb-green.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/other/athletes.png" data-lightbox="other" data-title="My caption">
+    						  <img src="../images/portfolio/other/athletes-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     				</ul>
     			</li>
 
+
+
     			<li>
     				<ul class="cd-item-wrapper">
-    					<li data-type="red" class="is-visible">
-    						<img src="img/thumb-red.jpg" alt="thumbnail">
-    					</li>
+                        <li data-type="red" class="is-visible">
+                            <a href="../images/portfolio/web/share-card.png" data-lightbox="web" data-title="My caption">
+                              <img src="../images/portfolio/web/share-card-sm.png" alt="thumbnail">
+                            </a>
+                        </li>
+    					
 
     					<li data-type="blue" class="is-hidden">
-    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/mobile/event-nav.png" data-lightbox="mobile" data-title="My caption">
+    						  <img src="../images/portfolio/mobile/event-nav-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     					
     					<li data-type="green" class="is-hidden">
-    						<img src="img/thumb-green.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/other/icons.jpg" data-lightbox="other" data-title="My caption">
+    						  <img src="../images/portfolio/other/icons-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     				</ul>
     			</li>
 
+
+
     			<li>
     				<ul class="cd-item-wrapper">
     					<li data-type="red" class="is-visible">
-    						<img src="img/thumb-red.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/web/payment.png" data-lightbox="web" data-title="My caption">
+    						  <img src="../images/portfolio/web/payment-sm.png" alt="thumbnail">
+                            </a>
     					</li>
 
     					<li data-type="blue" class="is-hidden">
-    						<img src="img/thumb-blue.jpg" alt="thumbnail">
+                            <a href=".../images/portfolio/mobile/exhib-app.png" data-lightbox="mobile" data-title="My caption">
+    						  <img src="../images/portfolio/mobile/exhib-app-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     					
     					<li data-type="green" class="is-hidden">
-    						<img src="img/thumb-green.jpg" alt="thumbnail">
+                            <a href="../images/portfolio/other/framework-sketch.png" data-lightbox="other" data-title="My caption">
+    						  <img src="../images/portfolio/other/framework-sketch-sm.png" alt="thumbnail">
+                            </a>
     					</li>
     				</ul>
     			</li>
     		</ul> <!-- cd-gallery -->
     	</div> <!-- cd-gallery-container -->
+
 
 
 
@@ -192,19 +235,19 @@
 
                 <div class="row text-center" id="footer-contact">
                     <a href="/">
-                        <img src="../Images/64th-logo2.png" id="footer-logo">
+                        <img src="../images/64th-logo2.png" id="footer-logo">
                     </a>
                     <a href="mailto:brittany.burrows@gmail.com?Subject=Hello">
-                        <img src="../Images/email-footer.png" class="contact-footer-icons">
+                        <img src="../images/email-footer.png" class="contact-footer-icons">
                     </a>
                     <a href="http://www.twitter.com/drbrittany">
-                        <img src="../Images/twitter-footer.png" class="contact-footer-icons">
+                        <img src="../images/twitter-footer.png" class="contact-footer-icons">
                     </a>
                     <a href="http://www.linkedin.com/in/bburrows">
-                        <img src="../Images/linkedin-footer.png" class="contact-footer-icons">
+                        <img src="../images/linkedin-footer.png" class="contact-footer-icons">
                     </a>
                     <a href="http://www.instagram.com/bdigs">
-                        <img src="../Images/instagram-footer.png" class="contact-footer-icons">
+                        <img src="../images/instagram-footer.png" class="contact-footer-icons">
                     </a>
                 </div>
 
