@@ -102,20 +102,20 @@
 }
 
 .email {
-  background-image: url(../images/email.png);
+  background-image: url(../Images/email.png);
 }
 
 .twitter {
-  background-image: url(../images/twitter.png);
+  background-image: url(../Images/twitter.png);
 }
 
 .linkedin {
-  background-image: url(../images/linkedin.png);
+  background-image: url(../Images/linkedin.png);
 
 }
 
 .instagram {
-  background-image: url(../images/instagram.png);
+  background-image: url(../Images/instagram.png);
 }
 
 
@@ -379,16 +379,16 @@ Main components
   max-width: 1170px;
 }
 .fixed-bg.bg-1 {
-  background-image: url("images/denali.jpg");
+  background-image: url("Images/denali.jpg");
 }
 .fixed-bg.bg-2 {
-  background-image: url("images/ghostranch.jpg");
+  background-image: url("Images/ghostranch.jpg");
 }
 .fixed-bg.bg-3 {
-  background-image: url("images/truffles-vib.jpg");
+  background-image: url("Images/truffles-vib.jpg");
 }
 .fixed-bg.bg-4 {
-  background-image: url("images/cow-close.jpg");
+  background-image: url("Images/cow-close.jpg");
 }
 @media only screen and (min-width: 768px) {
   .fixed-bg h1, .fixed-bg h2 {
