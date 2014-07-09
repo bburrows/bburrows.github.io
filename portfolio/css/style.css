@@ -16,7 +16,7 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #333333;
   background-color: #ebe9d7;
 }
@@ -115,16 +115,16 @@ Main components
   line-height: 40px;
   padding-left: 14px;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 .cd-filter a.selected {
-  background: #1a7179;
+  background: #FC5D38;
   color: #FFF;
 }
 .no-touch .cd-filter a.selected:hover {
-  background: #1f858e;
+  background: #F75231;
 }
 .cd-filter.is-open::after {
   -webkit-transform: translateY(-50%) rotate(-180deg);
@@ -174,13 +174,16 @@ Main components
     height: auto;
     width: auto;
     line-height: 1;
-    border-radius: 50em !important;
+    border-radius: 0.5em !important;
   }
   .no-touch .cd-filter a:hover {
-    box-shadow: inset 0 0 0 2px rgba(56, 56, 56, 0.2);
+    /*box-shadow: inset 0 0 0 2px rgba(56, 56, 56, 0.2);*/
+    box-shadow: inset 0 0 0 2px #FC5D38;
+    color: #FC5D38;
   }
   .cd-filter a.selected:hover {
     box-shadow: none;
+    color: #FFFFFF;
     /* removes the hover effect from the selected item */
   }
   .cd-filter.is-open ul li {
